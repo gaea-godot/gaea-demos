@@ -137,20 +137,24 @@ preview_color = Color(0.270588, 0.156863, 0.235294, 1)
 metadata/_custom_type_script = "uid://e45byecr4gi6"
 
 [sub_resource type="Resource" id="Resource_nr2x3"]
+resource_name = "Floor"
 script = ExtResource("2_mfpnn")
 enabled = true
 
 [sub_resource type="Resource" id="Resource_q5q5d"]
+resource_name = "Decorations"
 script = ExtResource("2_mfpnn")
 enabled = true
 metadata/_custom_type_script = "uid://3qsmwhn2sk47"
 
 [sub_resource type="Resource" id="Resource_entu7"]
+resource_name = "Walls"
 script = ExtResource("2_mfpnn")
 enabled = true
 metadata/_custom_type_script = "uid://3qsmwhn2sk47"
 
 [sub_resource type="Resource" id="Resource_woxbp"]
+resource_name = "Enemies"
 script = ExtResource("2_mfpnn")
 enabled = false
 metadata/_custom_type_script = "uid://3qsmwhn2sk47"
@@ -1607,37 +1611,37 @@ other = {
 "frames": [{
 "attached": Array[StringName]([&"_GraphNode_46619", &"_GraphNode_46660", &"_GraphNode_38697", &"_GraphNode_52512", &"_GraphNode_38727", &"_GraphNode_46754", &"_GraphNode_46723", &"_GraphNode_73049", &"_GraphNode_46691"]),
 "name": &"_GraphFrame_37029",
-"position": Vector2(220, -421),
-"size": Vector2(1012, 691),
+"position": Vector2(220, -431),
+"size": Vector2(1012, 748),
 "tint_color": Color(0.133333, 0.12549, 0.203922, 1),
 "tint_color_enabled": true,
 "title": "Walls"
 }, {
 "attached": Array[StringName]([&"_GraphNode_52354", &"_GraphNode_42526", &"_GraphNode_41445", &"_GraphNode_64947", &"_GraphNode_64894"]),
 "name": &"_GraphFrame_37038",
-"position": Vector2(400, 639),
-"size": Vector2(692, 582),
+"position": Vector2(400, 629),
+"size": Vector2(715, 629),
 "tint_color": Color(0.55, 0.415983, 0.3135, 0.52549),
 "tint_color_enabled": true,
 "title": "Place Chests & Enemies"
 }, {
 "attached": Array[StringName]([&"_GraphNode_40711", &"_GraphNode_40506", &"_GraphNode_52437", &"_GraphNode_57799"]),
 "name": &"_GraphFrame_37035",
-"position": Vector2(400, 1259),
-"size": Vector2(552, 462),
+"position": Vector2(400, 1249),
+"size": Vector2(575, 509),
 "tint_color": Color(0.125118, 0.226562, 0.110626, 0.75),
 "tint_color_enabled": true,
 "title": "Place Decorations"
 }, {
 "attached": Array[StringName]([&"BaseNode2", &"BaseNode6", &"BaseNode", &"_GraphNode_60208"]),
 "name": &"_GraphFrame_37032",
-"position": Vector2(-900, 119),
-"size": Vector2(1032, 666),
+"position": Vector2(-900, 109),
+"size": Vector2(1032, 765),
 "tint_color": Color(0.174225, 0.208835, 0.257812, 0.75),
 "tint_color_enabled": true,
 "title": "Floor"
 }],
-"scroll_offset": Vector2(0, -54.3543)
+"scroll_offset": Vector2(72.9708, 157.322)
 }
 Chest = SubResource("Resource_j6vep")
 Enemy = SubResource("Resource_2jxu3")
