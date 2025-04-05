@@ -58,7 +58,7 @@ metadata/_custom_type_script = "uid://e45byecr4gi6"
 [sub_resource type="Resource" id="Resource_e1h74"]
 script = ExtResource("3_kk1e5")
 materials = Array[ExtResource("2_du0iw")]([SubResource("Resource_o0o4j"), SubResource("Resource_h5ves")])
-weights = PackedInt32Array(100, 100)
+weights = PackedFloat32Array(100, 100)
 preview_color = Color(0.564382, 0.180166, 0.575045, 1)
 metadata/_custom_type_script = "uid://dtocuov1r8agi"
 
@@ -83,7 +83,7 @@ metadata/_custom_type_script = "uid://e45byecr4gi6"
 [sub_resource type="Resource" id="Resource_y3srg"]
 script = ExtResource("3_kk1e5")
 materials = Array[ExtResource("2_du0iw")]([SubResource("Resource_lm46c"), SubResource("Resource_jlmdo")])
-weights = PackedInt32Array(100, 100)
+weights = PackedFloat32Array(54.321, 100)
 preview_color = Color(0.0559988, 0.886948, 0.662938, 1)
 metadata/_custom_type_script = "uid://dtocuov1r8agi"
 
@@ -108,7 +108,7 @@ metadata/_custom_type_script = "uid://e45byecr4gi6"
 [sub_resource type="Resource" id="Resource_mfiu2"]
 script = ExtResource("3_kk1e5")
 materials = Array[ExtResource("2_du0iw")]([SubResource("Resource_qtqn2"), SubResource("Resource_wbro0")])
-weights = PackedInt32Array(100, 100)
+weights = PackedFloat32Array(50, 100)
 preview_color = Color(0.604519, 0.617006, 0.236859, 1)
 metadata/_custom_type_script = "uid://dtocuov1r8agi"
 
