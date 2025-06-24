@@ -1,0 +1,20 @@
+# Copy old repo
+xcopy [source_folder] [destination_folder] /E /I
+
+# In the new repo folder
+git-filter-repo --subdirectory-filter [module_folder]
+git remote set-url origin [https://github.com/<user>/<repo_name>]
+git push
+
+# Delete from old repo
+git rm -r [module_folder]
+git commit -m "Remove [module_folder] (preparing for submodule)"
+
+# Add new repo as a submodule
+git submodule add [https://github.com/<user>/<repo_name>] [module_folder]
+git config -f .gitmodules submodule.[module_folder].branch [branch]
+git commit -m "[repo_name] submodule"
+
+# Initialize submodule files on local repos
+git submodule update --init --recursive
+git submodule update --remote
