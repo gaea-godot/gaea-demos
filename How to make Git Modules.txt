@@ -21,3 +21,6 @@ git submodule update --remote
 
 # How to change the branch of a submodule
 git submodule set-branch --branch <branch_name> <submodule_path>
+
+# How to recursively update submodules while pulling
+git pull --recurse-submodules
