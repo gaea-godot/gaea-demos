@@ -18,3 +18,6 @@ git commit -m "[repo_name] submodule"
 # Initialize submodule files on local repos
 git submodule update --init --recursive
 git submodule update --remote
+
+# How to change the branch of a submodule
+git submodule set-branch --branch <branch_name> <submodule_path>
