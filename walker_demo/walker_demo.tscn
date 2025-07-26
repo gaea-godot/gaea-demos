@@ -1,9 +1,9 @@
 [gd_scene load_steps=8 format=4 uid="uid://di7u4f3idjdd"]
 
-[ext_resource type="Script" uid="uid://b76kqpu3u6dms" path="res://scenes/walker_demo/walker_demo.gd" id="1_m3j1j"]
+[ext_resource type="Script" uid="uid://b76kqpu3u6dms" path="res://demos/walker_demo/walker_demo.gd" id="1_m3j1j"]
 [ext_resource type="Script" uid="uid://d4feanreabm81" path="res://addons/gaea/nodes/generator.gd" id="2_o228a"]
-[ext_resource type="Resource" uid="uid://dowa1yikrbcdj" path="res://scenes/walker_demo/floor_walker.tres" id="3_0q7la"]
-[ext_resource type="Texture2D" uid="uid://druqwrm3nwuao" path="res://scenes/walker_demo/tileset.png" id="4_evla3"]
+[ext_resource type="Resource" uid="uid://dowa1yikrbcdj" path="res://demos/walker_demo/floor_walker.tres" id="3_0q7la"]
+[ext_resource type="Texture2D" uid="uid://druqwrm3nwuao" path="res://demos/walker_demo/tileset.png" id="4_evla3"]
 [ext_resource type="Script" uid="uid://b4x16tyyfihmb" path="res://addons/gaea/nodes/renderers/tilemap_renderer.gd" id="5_h41y8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cntqm"]
