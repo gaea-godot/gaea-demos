@@ -1,165 +1,11 @@
-[gd_scene load_steps=18 format=4 uid="uid://ckdu53c5uqdi2"]
+[gd_scene load_steps=9 format=4 uid="uid://ckdu53c5uqdi2"]
 
 [ext_resource type="Script" uid="uid://d4feanreabm81" path="res://addons/gaea/nodes/generator.gd" id="1_isojd"]
-[ext_resource type="Script" uid="uid://e45byecr4gi6" path="res://addons/gaea/resources/materials/data/tilemap_material.gd" id="2_lpw7f"]
-[ext_resource type="Texture2D" uid="uid://druqwrm3nwuao" path="res://scenes/walker_demo/tileset.png" id="3_rhpni"]
+[ext_resource type="Resource" uid="uid://bnejoskp261es" path="res://demos/chunk_demo/scatter_forest.tres" id="2_2aow5"]
+[ext_resource type="Texture2D" uid="uid://druqwrm3nwuao" path="res://testing/tileset.png" id="3_rhpni"]
 [ext_resource type="Script" uid="uid://b4x16tyyfihmb" path="res://addons/gaea/nodes/renderers/tilemap_renderer.gd" id="4_s1re1"]
-[ext_resource type="Script" uid="uid://3qsmwhn2sk47" path="res://addons/gaea/resources/gaea_layer.gd" id="5_vxdox"]
-[ext_resource type="Script" uid="uid://dae6umbqb872e" path="res://addons/gaea/resources/gaea_graph.gd" id="6_2p7ym"]
-[ext_resource type="Script" uid="uid://cvqs2wfp0ix6s" path="res://scenes/chunk_demo/player.gd" id="6_rhpni"]
+[ext_resource type="Script" uid="uid://cvqs2wfp0ix6s" path="res://demos/player.gd" id="6_rhpni"]
 [ext_resource type="Script" uid="uid://d06r24avdgi5g" path="res://addons/gaea/nodes/chunk_loaders/threaded_chunk_loader_2d.gd" id="7_nqqsc"]
-
-[sub_resource type="Resource" id="Resource_s1re1"]
-resource_name = "Floor"
-script = ExtResource("5_vxdox")
-enabled = true
-
-[sub_resource type="Resource" id="Resource_f7c8a"]
-resource_name = "Decorations"
-script = ExtResource("5_vxdox")
-enabled = true
-metadata/_custom_type_script = "uid://3qsmwhn2sk47"
-
-[sub_resource type="Resource" id="Resource_lpw7f"]
-resource_name = "Walls"
-script = ExtResource("5_vxdox")
-enabled = true
-metadata/_custom_type_script = "uid://3qsmwhn2sk47"
-
-[sub_resource type="Resource" id="Resource_j2ecx"]
-resource_name = "Enemies"
-script = ExtResource("5_vxdox")
-enabled = true
-metadata/_custom_type_script = "uid://3qsmwhn2sk47"
-
-[sub_resource type="Resource" id="Resource_0ke6m"]
-script = ExtResource("2_lpw7f")
-type = 0
-source_id = 1
-atlas_coord = Vector2i(0, 0)
-alternative_tile = 0
-preview_color = Color(0.382154, 0.16244, 0.619114, 1)
-metadata/_custom_type_script = "uid://e45byecr4gi6"
-
-[sub_resource type="Resource" id="Resource_vxdox"]
-script = ExtResource("2_lpw7f")
-type = 0
-source_id = 1
-atlas_coord = Vector2i(2, 4)
-alternative_tile = 0
-preview_color = Color(0.973788, 0.580334, 0.589443, 1)
-metadata/_custom_type_script = "uid://e45byecr4gi6"
-
-[sub_resource type="Resource" id="Resource_nqqsc"]
-resource_local_to_scene = true
-script = ExtResource("6_2p7ym")
-layers = Array[ExtResource("5_vxdox")]([SubResource("Resource_s1re1"), SubResource("Resource_f7c8a"), SubResource("Resource_lpw7f"), SubResource("Resource_j2ecx")])
-logging = 0
-connections = Array[Dictionary]([{
-"from_node": 1,
-"from_port": 0,
-"keep_alive": false,
-"to_node": 2,
-"to_port": 1
-}, {
-"from_node": 3,
-"from_port": 0,
-"keep_alive": false,
-"to_node": 2,
-"to_port": 0
-}, {
-"from_node": 2,
-"from_port": 0,
-"keep_alive": false,
-"to_node": 0,
-"to_port": 0
-}, {
-"from_node": 4,
-"from_port": 0,
-"keep_alive": false,
-"to_node": 0,
-"to_port": 1
-}, {
-"from_node": 5,
-"from_port": 0,
-"keep_alive": false,
-"to_node": 4,
-"to_port": 1
-}, {
-"from_node": 3,
-"from_port": 0,
-"keep_alive": false,
-"to_node": 4,
-"to_port": 0
-}])
-resource_uids = Array[String](["uid://dol7xviglksx4", "uid://cqs1w714pbfql", "uid://djjvx650evm0n", "uid://b7naniphpp341", "uid://bjmyuomcmtwq6", "uid://cqs1w714pbfql"])
-node_data = Array[Dictionary]([{
-&"arguments": {},
-&"enums": [],
-"name": &"BaseNode",
-"position": Vector2(440, -20),
-"salt": 1744011981
-}, {
-&"arguments": {
-&"name": "Floor"
-},
-&"enums": [],
-"name": &"_GraphNode_57565",
-"position": Vector2(-320, -80),
-"salt": 3202296564
-}, {
-&"arguments": {},
-&"enums": [],
-"name": &"_GraphNode_57668",
-"position": Vector2(-20, -180),
-"salt": 2749025664
-}, {
-&"arguments": {
-&"value": 1.0
-},
-&"enums": [],
-"name": &"_GraphNode_57743",
-"position": Vector2(-280, -240),
-"salt": 1870106755
-}, {
-&"arguments": {
-&"amount": 100
-},
-&"enums": [],
-"name": &"_GraphNode_59226",
-"position": Vector2(0, 300),
-"salt": 1576358129
-}, {
-&"arguments": {
-&"name": "TallCactus"
-},
-&"enums": [],
-"name": &"_GraphNode_59280",
-"position": Vector2(-300, 360),
-"salt": 1916099679
-}])
-parameters = Dictionary[StringName, Variant]({
-&"Floor": {
-"hint": 17,
-"hint_string": "GaeaMaterial",
-"name": "Floor",
-"type": 24,
-"usage": 4,
-"value": SubResource("Resource_0ke6m")
-},
-&"TallCactus": {
-"hint": 17,
-"hint_string": "GaeaMaterial",
-"name": "TallCactus",
-"type": 24,
-"usage": 4,
-"value": SubResource("Resource_vxdox")
-}
-})
-other = {
-&"save_version": 3
-}
-metadata/_custom_type_script = "uid://dae6umbqb872e"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nqqsc"]
 texture = ExtResource("3_rhpni")
@@ -521,7 +367,7 @@ sources/1 = SubResource("TileSetAtlasSource_nqqsc")
 
 [node name="GaeaGenerator" type="Node" parent="."]
 script = ExtResource("1_isojd")
-data = SubResource("Resource_nqqsc")
+data = ExtResource("2_2aow5")
 seed = 2554394942
 world_size = Vector3i(80, 45, 1)
 cell_size = Vector3i(8, 5, 1)
