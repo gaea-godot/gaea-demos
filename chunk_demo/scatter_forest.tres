@@ -26,6 +26,7 @@ metadata/_custom_type_script = "uid://3qsmwhn2sk47"
 resource_local_to_scene = true
 script = ExtResource("2_c5ls3")
 layers = Array[ExtResource("1_cwq3x")]([SubResource("Resource_s1re1"), SubResource("Resource_f7c8a"), SubResource("Resource_lpw7f"), SubResource("Resource_j2ecx")])
+save_version = 5
 _connections = Array[StringName]([&"1-0-2-1", &"3-0-2-0", &"2-0-0-0", &"4-0-0-1", &"5-0-4-1", &"3-0-4-0"])
 _node_data = Dictionary[int, Dictionary]({
 0: {
@@ -105,5 +106,4 @@ _parameters = Dictionary[StringName, Variant]({
 "value": null
 }
 })
-save_version = 4
 metadata/_custom_type_script = "uid://dae6umbqb872e"
