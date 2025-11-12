@@ -1,7 +1,21 @@
-[gd_resource type="Resource" script_class="GaeaGraph" load_steps=7 format=3 uid="uid://bnejoskp261es"]
+[gd_resource type="Resource" script_class="GaeaGraph" load_steps=10 format=3 uid="uid://bnejoskp261es"]
 
+[ext_resource type="Script" uid="uid://e45byecr4gi6" path="res://addons/gaea/resources/materials/data/tilemap_material.gd" id="1_c5ls3"]
 [ext_resource type="Script" uid="uid://3qsmwhn2sk47" path="res://addons/gaea/resources/gaea_layer.gd" id="1_cwq3x"]
 [ext_resource type="Script" uid="uid://dae6umbqb872e" path="res://addons/gaea/resources/gaea_graph.gd" id="2_c5ls3"]
+
+[sub_resource type="Resource" id="Resource_nynyg"]
+script = ExtResource("1_c5ls3")
+source_id = 1
+preview_color = Color(0.33328006, 0.98242456, 0.8945054, 1)
+metadata/_custom_type_script = "uid://e45byecr4gi6"
+
+[sub_resource type="Resource" id="Resource_i80a5"]
+script = ExtResource("1_c5ls3")
+source_id = 1
+atlas_coord = Vector2i(2, 4)
+preview_color = Color(0.46729898, 0.036582083, 0.7418799, 1)
+metadata/_custom_type_script = "uid://e45byecr4gi6"
 
 [sub_resource type="Resource" id="Resource_s1re1"]
 resource_name = "Floor"
@@ -95,7 +109,7 @@ _parameters = Dictionary[StringName, Variant]({
 "name": "Floor",
 "type": 24,
 "usage": 4,
-"value": null
+"value": SubResource("Resource_nynyg")
 },
 &"TallCactus": {
 "hint": 17,
@@ -103,7 +117,7 @@ _parameters = Dictionary[StringName, Variant]({
 "name": "TallCactus",
 "type": 24,
 "usage": 4,
-"value": null
+"value": SubResource("Resource_i80a5")
 }
 })
 metadata/_custom_type_script = "uid://dae6umbqb872e"

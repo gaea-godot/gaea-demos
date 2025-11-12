@@ -1,19 +1,24 @@
-[gd_scene load_steps=6 format=4 uid="uid://cqj01rob8h31"]
+[gd_scene load_steps=8 format=4 uid="uid://cqj01rob8h31"]
 
-[ext_resource type="Script" uid="uid://b76kqpu3u6dms" path="res://demos/demo_scene.gd" id="1_uau84"]
+[ext_resource type="Script" path="res://demos/demo_scene.gd" id="1_uau84"]
 [ext_resource type="Script" uid="uid://d4feanreabm81" path="res://addons/gaea/nodes/generator.gd" id="1_we47i"]
 [ext_resource type="Resource" uid="uid://g6ebrj5refpy" path="res://demos/biome_demo/biome_generator.tres" id="2_2kre3"]
 [ext_resource type="Script" uid="uid://b4x16tyyfihmb" path="res://addons/gaea/nodes/renderers/tilemap_renderer.gd" id="4_3j8ef"]
+[ext_resource type="Script" uid="uid://ct2w70ehn4avu" path="res://addons/gaea/resources/gaea_generation_settings.gd" id="4_hhwhb"]
 [ext_resource type="TileSet" uid="uid://dhtofk0w7bjmh" path="res://demos/common/tileset.tres" id="4_whjxk"]
+
+[sub_resource type="Resource" id="Resource_4ojvx"]
+script = ExtResource("4_hhwhb")
+seed = 264966766
+world_size = Vector3i(229, 129, 1)
 
 [node name="Biomes" type="Node2D"]
 script = ExtResource("1_uau84")
 
 [node name="GaeaGenerator" type="Node" parent="."]
 script = ExtResource("1_we47i")
-data = ExtResource("2_2kre3")
-seed = 264966766
-world_size = Vector3i(229, 129, 1)
+graph = ExtResource("2_2kre3")
+settings = SubResource("Resource_4ojvx")
 metadata/_custom_type_script = "uid://d4feanreabm81"
 
 [node name="Floor" type="TileMapLayer" parent="."]
