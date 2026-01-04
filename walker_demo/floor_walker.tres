@@ -7,69 +7,79 @@
 [ext_resource type="Script" uid="uid://dae6umbqb872e" path="res://addons/gaea/resources/gaea_graph.gd" id="5_mui55"]
 
 [sub_resource type="Resource" id="Resource_j6vep"]
+resource_name = "Chest"
 script = ExtResource("1_wtjh4")
 source_id = 1
 atlas_coord = Vector2i(2, 1)
-preview_color = Color(0.548666, 0.952075, 0.652068, 1)
+preview_color = Color(0.9843137, 0.9490196, 0.21176471, 1)
 metadata/_custom_type_script = "uid://e45byecr4gi6"
 
 [sub_resource type="Resource" id="Resource_o0o4j"]
+resource_name = "Sand 1"
 script = ExtResource("1_wtjh4")
 source_id = 1
 atlas_coord = Vector2i(0, 1)
-preview_color = Color(0.85098, 0.580392, 0.341176, 1)
+preview_color = Color(0.8509804, 0.627451, 0.4, 1)
 metadata/_custom_type_script = "uid://e45byecr4gi6"
 
 [sub_resource type="Resource" id="Resource_h5ves"]
+resource_name = "Sand 2"
 script = ExtResource("1_wtjh4")
 source_id = 1
 atlas_coord = Vector2i(0, 2)
-preview_color = Color(0.847059, 0.623529, 0.4, 1)
+preview_color = Color(0.8509804, 0.627451, 0.4, 1)
 metadata/_custom_type_script = "uid://e45byecr4gi6"
 
 [sub_resource type="Resource" id="Resource_e1h74"]
+resource_name = "Sand 1 and 2"
 script = ExtResource("3_kk1e5")
 materials = Array[ExtResource("2_du0iw")]([SubResource("Resource_o0o4j"), SubResource("Resource_h5ves")])
 weights = PackedFloat32Array(100, 100)
-preview_color = Color(0.564382, 0.180166, 0.575045, 1)
+preview_color = Color(0.8509804, 0.627451, 0.4, 1)
 metadata/_custom_type_script = "uid://dtocuov1r8agi"
 
 [sub_resource type="Resource" id="Resource_lm46c"]
+resource_name = "Small cactus"
 script = ExtResource("1_wtjh4")
 source_id = 1
 atlas_coord = Vector2i(2, 3)
-preview_color = Color(0.627481, 0.227889, 0.838571, 1)
+preview_color = Color(0.29411766, 0.4117647, 0.18431373, 1)
 metadata/_custom_type_script = "uid://e45byecr4gi6"
 
 [sub_resource type="Resource" id="Resource_jlmdo"]
+resource_name = "Big cactus"
 script = ExtResource("1_wtjh4")
 source_id = 1
 atlas_coord = Vector2i(2, 4)
-preview_color = Color(0.483951, 0.769272, 0.838571, 1)
+preview_color = Color(0.29411766, 0.4117647, 0.18431373, 1)
 metadata/_custom_type_script = "uid://e45byecr4gi6"
 
 [sub_resource type="Resource" id="Resource_y3srg"]
+resource_name = "Small or big cactus"
 script = ExtResource("3_kk1e5")
 materials = Array[ExtResource("2_du0iw")]([SubResource("Resource_lm46c"), SubResource("Resource_jlmdo")])
 weights = PackedFloat32Array(100, 100)
-preview_color = Color(0.0559988, 0.886948, 0.662938, 1)
+preview_color = Color(0.29411766, 0.4117647, 0.18431373, 1)
 metadata/_custom_type_script = "uid://dtocuov1r8agi"
 
 [sub_resource type="Resource" id="Resource_qtqn2"]
+resource_name = "Small grass 1"
 script = ExtResource("1_wtjh4")
 source_id = 1
 atlas_coord = Vector2i(0, 3)
-preview_color = Color(0.838571, 0.466981, 0.473734, 1)
+preview_color = Color(0.29411766, 0.4117647, 0.18431373, 1)
 metadata/_custom_type_script = "uid://e45byecr4gi6"
 
 [sub_resource type="Resource" id="Resource_wbro0"]
+resource_name = "Small grass 2"
 script = ExtResource("1_wtjh4")
 source_id = 1
 atlas_coord = Vector2i(1, 3)
-preview_color = Color(0.834095, 0.838571, 0.515955, 1)
+preview_color = Color(0.29411766, 0.4117647, 0.18431373, 1)
 metadata/_custom_type_script = "uid://e45byecr4gi6"
 
 [sub_resource type="Resource" id="Resource_mfiu2"]
+resource_name = "Small grass"
 script = ExtResource("3_kk1e5")
 materials = Array[ExtResource("2_du0iw")]([SubResource("Resource_qtqn2"), SubResource("Resource_wbro0")])
 weights = PackedFloat32Array(50, 100)
@@ -77,24 +87,27 @@ preview_color = Color(0.604519, 0.617006, 0.236859, 1)
 metadata/_custom_type_script = "uid://dtocuov1r8agi"
 
 [sub_resource type="Resource" id="Resource_30ot8"]
+resource_name = "Wall above"
 script = ExtResource("1_wtjh4")
 source_id = 1
 atlas_coord = Vector2i(2, 2)
-preview_color = Color(0.248195, 0.605651, 0.342506, 1)
+preview_color = Color(0.5411765, 0.43137255, 0.36862746, 1)
 metadata/_custom_type_script = "uid://e45byecr4gi6"
 
 [sub_resource type="Resource" id="Resource_payrb"]
+resource_name = "Wall below"
 script = ExtResource("1_wtjh4")
 source_id = 1
 atlas_coord = Vector2i(1, 2)
-preview_color = Color(0.773438, 0.20493, 0.228018, 1)
+preview_color = Color(0.5411765, 0.43137255, 0.36862746, 1)
 metadata/_custom_type_script = "uid://e45byecr4gi6"
 
 [sub_resource type="Resource" id="Resource_kk1e5"]
+resource_name = "Wall"
 script = ExtResource("1_wtjh4")
 source_id = 1
 atlas_coord = Vector2i(1, 1)
-preview_color = Color(0.270588, 0.156863, 0.235294, 1)
+preview_color = Color(0.4640743, 0.3675102, 0.29612586, 1)
 metadata/_custom_type_script = "uid://e45byecr4gi6"
 
 [sub_resource type="Resource" id="Resource_nr2x3"]
@@ -112,9 +125,13 @@ script = ExtResource("2_mfpnn")
 metadata/_custom_type_script = "uid://3qsmwhn2sk47"
 
 [resource]
-resource_local_to_scene = true
 script = ExtResource("5_mui55")
 layers = Array[ExtResource("2_mfpnn")]([SubResource("Resource_nr2x3"), SubResource("Resource_entu7"), SubResource("Resource_q5q5d")])
+preview_coordinate_format = 1
+preview_seed = 3333378524
+preview_size_preset = 5
+preview_world_size = Vector3i(80, 45, 1)
+preview_chunk_size = Vector3i(80, 45, 1)
 save_version = 5
 _connections = Array[StringName]([&"4-0-2-1", &"23-0-21-1", &"28-0-21-0", &"31-0-25-1", &"25-0-27-0", &"30-0-6-1", &"26-0-7-1", &"29-0-15-1", &"15-0-16-0", &"27-0-5-1", &"22-0-5-2", &"8-0-25-0", &"9-0-8-0", &"9-0-7-0", &"10-0-15-0", &"11-0-12-0", &"12-0-5-0", &"24-0-13-0", &"2-0-11-0", &"3-0-24-0", &"3-0-2-0", &"14-0-22-0", &"16-0-22-1", &"21-0-22-2", &"9-0-1-0", &"1-0-6-0", &"13-0-9-0", &"7-0-27-1", &"6-0-27-2", &"20-0-0-1", &"0-0-14-0", &"17-0-18-0", &"18-0-19-0", &"19-0-0-0", &"3-0-17-0", &"18-0-28-0", &"13-0-10-0"])
 _node_data = Dictionary[int, Dictionary]({
