@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=4 uid="uid://ckdu53c5uqdi2"]
 
 [ext_resource type="Script" uid="uid://d4feanreabm81" path="res://addons/gaea/nodes/generator.gd" id="1_isojd"]
-[ext_resource type="Resource" uid="uid://bnejoskp261es" path="res://demos/chunk_demo/scatter_forest.tres" id="2_2aow5"]
+[ext_resource type="Resource" uid="uid://bnejoskp261es" path="res://demos/chunk_demo/chunk_demo_graph.tres" id="2_2aow5"]
 [ext_resource type="TileSet" uid="uid://dhtofk0w7bjmh" path="res://demos/common/tileset.tres" id="3_2aow5"]
 [ext_resource type="Script" uid="uid://ct2w70ehn4avu" path="res://addons/gaea/resources/gaea_generation_settings.gd" id="3_l3vsb"]
 [ext_resource type="Script" uid="uid://rfsrtakmflly" path="res://addons/gaea/nodes/threading/gaea_task_pool.gd" id="4_fuoyj"]

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://b76kqpu3u6dms" path="res://demos/demo_scene.gd" id="1_uau84"]
 [ext_resource type="Script" uid="uid://d4feanreabm81" path="res://addons/gaea/nodes/generator.gd" id="1_we47i"]
-[ext_resource type="Resource" uid="uid://g6ebrj5refpy" path="res://demos/biome_demo/biome_generator.tres" id="2_2kre3"]
+[ext_resource type="Resource" uid="uid://g6ebrj5refpy" path="res://demos/biome_demo/biome_demo_graph.tres" id="2_2kre3"]
 [ext_resource type="Script" uid="uid://b4x16tyyfihmb" path="res://addons/gaea/nodes/renderers/tilemap_renderer.gd" id="4_3j8ef"]
 [ext_resource type="Script" uid="uid://ct2w70ehn4avu" path="res://addons/gaea/resources/gaea_generation_settings.gd" id="4_hhwhb"]
 [ext_resource type="TileSet" uid="uid://dhtofk0w7bjmh" path="res://demos/common/tileset.tres" id="4_whjxk"]
