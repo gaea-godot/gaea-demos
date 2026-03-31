@@ -1,0 +1,274 @@
+[gd_resource type="Resource" script_class="GaeaGraph" format=3 uid="uid://bjme0srwgf1h2"]
+
+[ext_resource type="Script" uid="uid://3qsmwhn2sk47" path="res://addons/gaea/runtime/resources/layer.gd" id="1_kivw2"]
+[ext_resource type="Script" uid="uid://cs0htewp12cyu" path="res://addons/gaea/runtime/resources/materials/data/gridmap_material.gd" id="1_rbg3d"]
+[ext_resource type="Script" uid="uid://cc8olruw4iday" path="res://addons/gaea/runtime/resources/curves/data/curve_scalar.gd" id="2_ernlh"]
+[ext_resource type="Script" uid="uid://dae6umbqb872e" path="res://addons/gaea/runtime/resources/graph.gd" id="2_rbg3d"]
+
+[sub_resource type="Resource" id="Resource_rbg3d"]
+script = ExtResource("1_rbg3d")
+item_idx = 1
+preview_color = Color(0.054287545, 0.97247875, 0.6469814, 1)
+metadata/_custom_type_script = "uid://cs0htewp12cyu"
+
+[sub_resource type="Curve" id="Curve_ernlh"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1, 1), 1.4, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Resource" id="Resource_42rdb"]
+script = ExtResource("2_ernlh")
+curve = SubResource("Curve_ernlh")
+metadata/_custom_type_script = "uid://cc8olruw4iday"
+
+[sub_resource type="Resource" id="Resource_27gpc"]
+script = ExtResource("1_rbg3d")
+item_idx = 2
+preview_color = Color(0.36115193, 0.70397514, 0.046881415, 1)
+metadata/_custom_type_script = "uid://cs0htewp12cyu"
+
+[sub_resource type="Resource" id="Resource_o1x4s"]
+resource_name = "Mass"
+script = ExtResource("1_kivw2")
+
+[resource]
+script = ExtResource("2_rbg3d")
+layers = Array[ExtResource("1_kivw2")]([SubResource("Resource_o1x4s")])
+debug_enabled = true
+logging = 8
+preview_seed = 87626639
+preview_size_preset = 5
+preview_world_size = Vector3i(64, 64, 64)
+preview_chunk_size = Vector3i(32, 32, 32)
+preview_chunk_count = 6
+save_version = 5
+_connections = Array[StringName]([&"11-0-0-0", &"13-0-18-0", &"18-0-6-0", &"18-0-8-0", &"22-0-11-0", &"5-0-22-1", &"12-0-14-0", &"21-0-23-0", &"21-1-23-1", &"21-2-24-1", &"23-0-24-0", &"24-0-26-0", &"26-0-19-0", &"19-0-6-2", &"27-0-8-1", &"27-0-6-1", &"12-0-21-0", &"26-0-25-1", &"25-0-8-2", &"24-0-28-0", &"28-0-19-1", &"14-0-27-0", &"8-0-22-0", &"6-0-20-0", &"20-0-11-1", &"9-0-20-1", &"17-0-18-1", &"29-0-13-0"])
+_node_data = Dictionary[int, Dictionary]({
+0: {
+&"position": Vector2(2060, -80),
+&"salt": 2276584807,
+&"type": 0,
+&"uid": "uid://dol7xviglksx4"
+},
+5: {
+&"arguments": {
+&"name": "Mass"
+},
+&"position": Vector2(1020, -120),
+&"salt": 3089801954,
+&"type": 0,
+&"uid": "uid://cqs1w714pbfql"
+},
+6: {
+&"arguments": {
+&"distance_range": {
+"max": 16.0,
+"min": 8.0
+},
+&"to_point": Vector3(32, 32, 32)
+},
+&"position": Vector2(660, 100),
+&"salt": 3687976074,
+&"type": 0,
+&"uid": "uid://dnj3grm2qv20y"
+},
+8: {
+&"arguments": {
+&"distance_range": {
+"max": 32.0,
+"min": 0.0
+},
+&"to_point": Vector3(32, 32, 32)
+},
+&"position": Vector2(620, -460),
+&"salt": 3515164806,
+&"type": 0,
+&"uid": "uid://dnj3grm2qv20y"
+},
+9: {
+&"arguments": {
+&"name": "Crust"
+},
+&"position": Vector2(1020, 540),
+&"salt": 2011442395,
+&"type": 0,
+&"uid": "uid://cqs1w714pbfql"
+},
+11: {
+&"position": Vector2(1800, -100),
+&"salt": 3318986948,
+&"type": 0,
+&"uid": "uid://d2f6bjkxcn7jl"
+},
+12: {
+&"enums": [0],
+&"position": Vector2(-1600, -780),
+&"salt": 909458999,
+&"type": 0,
+&"uid": "uid://fc8vogh4mvhw"
+},
+13: {
+&"arguments": {
+&"curve": null,
+&"end": 1.0,
+&"position": Vector3(16, 0, 16),
+&"restrict_x": true,
+&"restrict_y": false,
+&"restrict_z": false,
+&"size": Vector3(32, 48, 32),
+&"start": 0.0
+},
+&"enums": [1, 2, 0],
+&"position": Vector2(-840, -240),
+&"salt": 4176764518,
+&"type": 0,
+&"uid": "uid://cgnbu4kly4sls"
+},
+14: {
+&"arguments": {
+&"a": Vector3i(0, 0, 0),
+&"b": Vector3(2, 2, 2)
+},
+&"enums": [9, 3, 0],
+&"position": Vector2(-560, -1040),
+&"salt": 1198545444,
+&"type": 0,
+&"uid": "uid://bclwjwmoudxkh"
+},
+17: {
+&"arguments": {
+&"frequency": 2.0,
+&"lacunarity": 10.0
+},
+&"position": Vector2(-660, 280),
+&"salt": 1999076738,
+&"type": 0,
+&"uid": "uid://c3xxswfpt3mny"
+},
+18: {
+&"enums": [2],
+&"position": Vector2(0, -20),
+&"salt": 610294966,
+&"type": 0,
+&"uid": "uid://dxsow1o2b4tm3"
+},
+19: {
+&"position": Vector2(-160, -420),
+&"salt": 1088460275,
+&"type": 0,
+&"uid": "uid://m0m4x6trd11h"
+},
+20: {
+&"arguments": {
+&"range": {
+"max": 1.0,
+"min": 0.01
+}
+},
+&"position": Vector2(1340, 240),
+&"salt": 3820495671,
+&"type": 0,
+&"uid": "uid://djjvx650evm0n"
+},
+21: {
+&"enums": [9],
+&"position": Vector2(-1260, -680),
+&"salt": 879944840,
+&"type": 0,
+&"uid": "uid://b1vu2sfwynxql"
+},
+22: {
+&"arguments": {
+&"range": {
+"max": 1.0,
+"min": 0.01
+}
+},
+&"position": Vector2(1360, -340),
+&"salt": 3399543657,
+&"type": 0,
+&"uid": "uid://djjvx650evm0n"
+},
+23: {
+&"enums": [5],
+&"position": Vector2(-960, -660),
+&"salt": 1148786294,
+&"type": 0,
+&"uid": "uid://yu78bj4he27g"
+},
+24: {
+&"enums": [5],
+&"position": Vector2(-740, -600),
+&"salt": 2487696192,
+&"type": 0,
+&"uid": "uid://yu78bj4he27g"
+},
+25: {
+&"position": Vector2(-160, -620),
+&"salt": 3419993499,
+&"type": 0,
+&"uid": "uid://m0m4x6trd11h"
+},
+26: {
+&"arguments": {
+&"a": 0.0,
+&"b": 4.0
+},
+&"enums": [3],
+&"position": Vector2(-520, -700),
+&"salt": 3409673799,
+&"type": 0,
+&"uid": "uid://yu78bj4he27g"
+},
+27: {
+&"position": Vector2(60, -800),
+&"reroute_type": 9,
+&"salt": 842683339,
+&"type": 0,
+&"uid": "uid://bgqqucap4kua4"
+},
+28: {
+&"arguments": {
+&"b": 2.0
+},
+&"enums": [3],
+&"position": Vector2(-520, -460),
+&"salt": 81837880,
+&"type": 0,
+&"uid": "uid://yu78bj4he27g"
+},
+29: {
+&"arguments": {
+&"name": "CurveParameter"
+},
+&"position": Vector2(-1260, -160),
+&"salt": 2778764121,
+&"type": 0,
+&"uid": "uid://cfyg2uk1pea3d"
+}
+})
+_parameters = Dictionary[StringName, Variant]({
+&"Crust": {
+"hint": 17,
+"hint_string": "GaeaMaterial",
+"name": &"Crust",
+"type": 24,
+"usage": 4,
+"value": SubResource("Resource_rbg3d")
+},
+&"CurveParameter": {
+"hint": 17,
+"hint_string": "GaeaCurve",
+"name": "CurveParameter",
+"type": 24,
+"usage": 4,
+"value": SubResource("Resource_42rdb")
+},
+&"Mass": {
+"hint": 17,
+"hint_string": "GaeaMaterial",
+"name": &"Mass",
+"type": 24,
+"usage": 4,
+"value": SubResource("Resource_27gpc")
+}
+})
