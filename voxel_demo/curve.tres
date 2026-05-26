@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="GaeaCurve3D" format=3 uid="uid://ckdclo8038p56"]
+
+[ext_resource type="Script" uid="uid://dnpl4v2tjdcx1" path="res://addons/gaea/runtime/resources/curves/data/curve_3d.gd" id="1_sic7v"]
+
+[sub_resource type="Curve3D" id="Curve3D_1vnfg"]
+
+[resource]
+script = ExtResource("1_sic7v")
+curve = SubResource("Curve3D_1vnfg")
+metadata/_custom_type_script = "uid://dnpl4v2tjdcx1"
