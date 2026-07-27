@@ -61,6 +61,7 @@ loading_radius = Vector3i(1, 1, 1)
 metadata/_custom_type_script = "uid://btdvr3362d6ln"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1443702020]
+visible = false
 
 [node name="MarginContainer" type="MarginContainer" parent="CanvasLayer" unique_id=455929592]
 anchors_preset = 15

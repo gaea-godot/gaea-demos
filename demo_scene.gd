@@ -3,7 +3,7 @@ extends Node2D
 
 @onready var gaea_generator: GaeaGenerator = $GaeaGenerator
 
-var last_grid: GaeaGrid
+var last_result: GaeaResult
 
 
 ## Used for integration testing.
@@ -12,7 +12,7 @@ func test_generation(fixed_seed: int = 0) -> void:
 	gaea_generator.random_seed_on_generate = false
 	gaea_generator.seed = fixed_seed
 	gaea_generator.generate()
-	gaea_generator.generation_finished.connect(func(grid): last_grid = grid)
+	gaea_generator.generation_finished.connect(func(grid): last_result = grid)
 	await gaea_generator.generation_finished
 
 
