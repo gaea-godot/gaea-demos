@@ -1,0 +1,102 @@
+[gd_scene format=3 uid="uid://c2t21sla55urb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v30hi"]
+albedo_color = Color(0.66, 0.297, 0.3091, 1)
+metallic = 0.13
+
+[sub_resource type="BoxMesh" id="BoxMesh_vmdpb"]
+material = SubResource("StandardMaterial3D_v30hi")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_v30hi"]
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_v30hi"]
+geometry_parsed_geometry_type = 1
+filter_baking_aabb = AABB(0, 0, 0, 1, 1, 1)
+filter_baking_aabb_offset = Vector3(-0.5, -0.5, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vmdpb"]
+albedo_color = Color(0.2112, 0.66, 0.24859998, 1)
+roughness = 0.33
+
+[sub_resource type="BoxMesh" id="BoxMesh_muco0"]
+material = SubResource("StandardMaterial3D_vmdpb")
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_vmdpb"]
+geometry_parsed_geometry_type = 1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_muco0"]
+albedo_color = Color(0.59047073, 0.5521255, 0.46951836, 1)
+metallic = 0.54
+roughness = 0.61
+
+[sub_resource type="BoxMesh" id="BoxMesh_84ium"]
+material = SubResource("StandardMaterial3D_muco0")
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_muco0"]
+geometry_parsed_geometry_type = 1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_84ium"]
+transparency = 1
+blend_mode = 4
+albedo_color = Color(0.228, 0.55290025, 0.95, 0.6509804)
+metallic = 0.54
+roughness = 0.61
+
+[sub_resource type="BoxMesh" id="BoxMesh_v30hi"]
+material = SubResource("StandardMaterial3D_84ium")
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_84ium"]
+geometry_parsed_geometry_type = 1
+
+[node name="VoxelLibrary" type="Node3D" unique_id=261242212]
+
+[node name="Soil" type="MeshInstance3D" parent="." unique_id=1354686773]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.4951572, 0, 0)
+mesh = SubResource("BoxMesh_vmdpb")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Soil" unique_id=2006172445]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Soil/StaticBody3D" unique_id=471967029]
+shape = SubResource("BoxShape3D_v30hi")
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="Soil" unique_id=1972259291]
+navigation_mesh = SubResource("NavigationMesh_v30hi")
+
+[node name="Grass" type="MeshInstance3D" parent="." unique_id=1721035440]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.953352, 0, 0)
+mesh = SubResource("BoxMesh_muco0")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="Grass" unique_id=169154363]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Grass/StaticBody3D2" unique_id=501778746]
+shape = SubResource("BoxShape3D_v30hi")
+
+[node name="NavigationRegion3D2" type="NavigationRegion3D" parent="Grass" unique_id=864554492]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5418053, 0, 0)
+navigation_mesh = SubResource("NavigationMesh_vmdpb")
+
+[node name="Rock" type="MeshInstance3D" parent="." unique_id=1196205349]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4673476, 0, 0)
+mesh = SubResource("BoxMesh_84ium")
+
+[node name="StaticBody3D3" type="StaticBody3D" parent="Rock" unique_id=2085460687]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Rock/StaticBody3D3" unique_id=639616852]
+shape = SubResource("BoxShape3D_v30hi")
+
+[node name="NavigationRegion3D3" type="NavigationRegion3D" parent="Rock" unique_id=1514806058]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.962505, 0, 0)
+navigation_mesh = SubResource("NavigationMesh_muco0")
+
+[node name="Water" type="MeshInstance3D" parent="." unique_id=2075214266]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4673476, 0, -3.3193436)
+mesh = SubResource("BoxMesh_v30hi")
+
+[node name="StaticBody3D4" type="StaticBody3D" parent="Water" unique_id=349658154]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Water/StaticBody3D4" unique_id=1062098924]
+shape = SubResource("BoxShape3D_v30hi")
+
+[node name="NavigationRegion3D4" type="NavigationRegion3D" parent="Water" unique_id=1065835534]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.962505, 0, 3.3193436)
+navigation_mesh = SubResource("NavigationMesh_84ium")
